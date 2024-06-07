@@ -9,6 +9,7 @@ http.createServer(function(reuqest, response)
 //D:\Progs\NodeJS\node.exe .\app.js
 //Server started in port 3000.
 
+/*
 const os = require("os");
 const greeting = require("./greeting");
 let userName = os.userInfo().username;
@@ -19,6 +20,7 @@ const User = require("./user.js");
 //Data Request: Fri Jun 07 2024 18:06:07 GMT+0300 (Eastern European Summer Time)
 //Good Evening, SuperDuperPCsasa
 
+
 let user1 = new User("Svarog", 35);
 user1.sayHi();
 //D:\Progs\NodeJS\node.exe .\app.js
@@ -26,7 +28,9 @@ user1.sayHi();
 //Good Evening, SuperDuperPCsasa
 //Hail Wotan! My name is Svarog
 //Server started in port 3000.
+*/
 
+/*
 module.exports.name = "Alice";
 var greeting1 = require("./greeting.js");
 console.log(`Hello ${greeting1.name}`); //Hello Alice
@@ -42,6 +46,7 @@ console.log(`Hello ${greeting1.name}`); //Hello Bob
 //2
 //Hello Bob
 //Server started in port 3000.
+*/
 
 const welcom = require("./welcome");
 welcom.getMorningMessage();
@@ -53,4 +58,16 @@ welcom.getEveningMessage();
 //Hello undefined
 //2
 //Hello Bob
+//Server started in port 3000.
+
+//other greeting requires commented 
+const greeting = require("./greeting");
+global.name = "Serhii";
+global.console.log(date);
+console.log(greeting.getMessage());
+//D:\Progs\NodeJS\node.exe .\app.js
+//Good Morning
+//Good Evening
+//Fri Jun 07 2024 18:47:05 GMT+0300 (Eastern European Summer Time)
+//Good Evening, Serhii
 //Server started in port 3000.
