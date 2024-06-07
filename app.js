@@ -6,3 +6,5 @@ http.createServer(function(reuqest, response)
 {
     console.log("Server started in port 3000.");
 });
+//D:\Progs\NodeJS\node.exe .\app.js
+//Server started in port 3000.
