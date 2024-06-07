@@ -42,3 +42,15 @@ console.log(`Hello ${greeting1.name}`); //Hello Bob
 //2
 //Hello Bob
 //Server started in port 3000.
+
+const welcom = require("./welcome");
+welcom.getMorningMessage();
+welcom.getEveningMessage();
+//D:\Progs\NodeJS\node.exe .\app.js
+//Data Request: Fri Jun 07 2024 18:25:55 GMT+0300 (Eastern European Summer Time)
+//Good Evening, SuperDuperPCsasa
+//Hail Wotan! My name is Svarog
+//Hello undefined
+//2
+//Hello Bob
+//Server started in port 3000.
