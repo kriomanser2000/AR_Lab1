@@ -26,3 +26,19 @@ user1.sayHi();
 //Good Evening, SuperDuperPCsasa
 //Hail Wotan! My name is Svarog
 //Server started in port 3000.
+
+module.exports.name = "Alice";
+var greeting1 = require("./greeting.js");
+console.log(`Hello ${greeting1.name}`); //Hello Alice
+var greeting2 = require("./greeting.js");
+greeting2.name = "Bob";
+console.log(`Hello ${greeting2.name}`); //Hello Bob
+console.log(`Hello ${greeting1.name}`); //Hello Bob
+//D:\Progs\NodeJS\node.exe .\app.js
+//Data Request: Fri Jun 07 2024 18:25:55 GMT+0300 (Eastern European Summer Time)
+//Good Evening, SuperDuperPCsasa
+//Hail Wotan! My name is Svarog
+//Hello undefined
+//2
+//Hello Bob
+//Server started in port 3000.
